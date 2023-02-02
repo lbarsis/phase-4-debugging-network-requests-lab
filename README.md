@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: I opened up my console and saw the unititialized constant error which told me there was an unaccounted variable in my ToyController Class. I found Toys and changed the code to reflect the name of the class: Toy.create(toy_params)
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: The error inside the console showed there was an internal server error which indicated that the fetch request was not receiving a response. After checking the code, I saw that the updated toy was not being returned in JSON.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: I found this without debugging, I saw destroy was not included in the routes and updated accordingly.
